@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.navigation {
+  margin-top: 16px;
+  .navList {
+    display: flex;
+    margin: 0;
+    padding-left: 22px;
+    list-style-type: none;
+    @media screen and (min-width: 760px) {
+      padding-left: 0;
+    }
+    .navItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 35px;
+      font-weight: 700;
+      cursor: pointer;
+      @media screen and (min-width: 760px) {
+        margin-right: 48px;
+      }
+      a {
+        font-size: 24px;
+        color: #cbb1a2;
+        &:hover {
+          color: #6749a5;
+        }
+      }
+      .borderBottom {
+        margin-top: 13px;
+        width: 24px;
+        height: 3px;
+        background-color: $active-color;
+      }
+
+      .hide {
+        display: none;
+      }
+    }
+    .active {
+      a {
+        color: $active-color;
+      }
+    }
+  }
+}

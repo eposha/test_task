@@ -1,0 +1,36 @@
+.main_content {
+  padding: 79px 21px;
+  width: 100%;
+  background: rgba(255, 244, 238, 1);
+  @media screen and (min-width: 760px) {
+    padding: 64px 99px;
+  }
+  .header_wrapp {
+    @media screen and (min-width: 760px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 59px;
+      color: #000000;
+      @media screen and (min-width: 760px) {
+        margin: 0;
+      }
+    }
+  }
+  figure {
+    margin: 0;
+    margin-top: 37px;
+    max-width: 100%;
+    &:last-child {
+      margin-top: 64px;
+    }
+    .image {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
